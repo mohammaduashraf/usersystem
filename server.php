@@ -4,7 +4,7 @@
 	$email    = "";
 	$errors = array(); 
 	$_SESSION['success'] = "";
-	$db = mysqli_connect('localhost', 'root', '', 'login-sys');
+	$db = mysqli_connect('host-address', 'username', '', 'password');
 	if (isset($_POST['reg_user'])) {
 		$username = mysqli_real_escape_string($db, $_POST['username']);
 		$email = mysqli_real_escape_string($db, $_POST['email']);
